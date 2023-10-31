@@ -27,7 +27,7 @@
 
     return (
       <div>
-          <div className="container about-page">
+          <div className="about-page">
           <div className="intro">
             
 

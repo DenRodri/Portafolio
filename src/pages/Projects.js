@@ -12,6 +12,9 @@ export function Projects() {
         <ProjectItem name="Social Media Website" image={Project1} />
         <ProjectItem name="Social Media Website" image={Project1} />
         <ProjectItem name="Social Media Website" image={Project1} />
+        <ProjectItem name="Social Media Website" image={Project1} />
+        <ProjectItem name="Social Media Website" image={Project1} />
+        <ProjectItem name="Social Media Website" image={Project1} />
         </div>
       </div>
 

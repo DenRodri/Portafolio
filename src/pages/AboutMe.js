@@ -27,7 +27,7 @@
 
     return (
       <div>
-          <div className="container about-page">
+          <div className="about-page">
           <div className="intro">
             
 
@@ -60,16 +60,13 @@
                 <AnimatedLetters strArray={['A', 'c','e','r','c','a',' ','d','e',' ','m','i']}/>
               </h1>
 
+              <p>
+              Soy un estudiante aplicado de programacion de Republica Dominicana en mi ultimo año escolar. Tengo una pasion en desarrollo de software y me gusta pasar mi tiempo con retos y metas bien definidas. Soy bueno adaptandome a nuevas experiencias conociendo mis propios limites para superarlos y aprender cosas nuevas.<br/><br/>
+            </p>
+            <p>
+            Se como reconocer mis errores y asi crecer como persona, lo cual me ayuda en mis competencias a la hora de trabajar. Soy estudiante de ITESA, y los valores que me han dado me han hecho la persona que soy hoy en dia. Gracias a ello puedo ejercer liderazgo y poner mis conocimientos y buen desempeño a lo que hago.<br/><br/>
+            </p>
             
-            <p>
-            Soy bueno trabajando con metas en mente, y definirlas no se me hace difícil a la hora de emprender cualquier tarea. He tenido éxito al ejercer liderazgo en otras actividades y pondré mis conocimientos y buen desempeño a disposición de la empresa.<br/><br/>
-            </p>
-            <p>
-            Conozco mis límites y no tengo temor a superarlos y aprender siempre cosas nuevas. Puedo reconocer mis errores y así crecer como persona, lo cual me ayuda en mis competencias a la hora de trabajar.
-            </p>
-            <p>
-
-            </p>
           </div>
       </div>
       </div>

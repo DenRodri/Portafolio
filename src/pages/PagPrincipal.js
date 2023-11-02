@@ -42,7 +42,7 @@ export function PagPrincipal() {
           </h1>
           <h2> Desarrollador de Backend<br/>
           ---------------------------<br/>
-          Experto en javascript</h2>
+          Desarrollador de aplicaciones moviles</h2>
           <Link to="/contacts" className='flat-button'>Contactame!</Link>
           </div>
           <div className="text">

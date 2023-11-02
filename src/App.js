@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import { AboutMe } from "./pages/AboutMe.js";
 import { Contacts } from "./pages/Contacts.js";
 import { PagPrincipal } from "./pages/PagPrincipal.js";
+import { Projects } from "./pages/Projects.js"
 import Logo from "./assets/images/Denzels.png"
 import './App.scss'; 
 
@@ -16,11 +17,15 @@ function App() {
         </div>
         <ul className="nav-links">
           <li>
-            <Link to="/about">About Me</Link>
+            <Link to="/about">Acerca de mi</Link>
           </li>
           <li>
-            <Link to="/contacts">Contacts</Link>
+            <Link to="/Projects">Proyectos</Link>
           </li>
+          <li>
+            <Link to="/contacts">Contacto</Link>
+          </li>
+          
         </ul>
       </nav>
 
@@ -28,6 +33,7 @@ function App() {
         <Route path="/" element={<PagPrincipal />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>
   );

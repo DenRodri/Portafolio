@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import { AboutMe } from "./pages/AboutMe.js";
+import { Contacts } from "./pages/Contacts.js";
+import { PagPrincipal } from "./pages/PagPrincipal.js";
+import Logo from "./assets/images/Denzels.png"
+import './App.scss'; 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className="navbar">
+        <div className="logo">
+          <Link to="/"><img classname="sub-logo" src={Logo} alt="Denzels"/></Link>
+
+        </div>
+        <ul className="nav-links">
+          <li>
+            <Link to="/about">About Me</Link>
+          </li>
+          <li>
+            <Link to="/contacts">Contacts</Link>
+          </li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<PagPrincipal />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/contacts" element={<Contacts />} />
+      </Routes>
     </div>
   );
 }

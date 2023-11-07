@@ -1,23 +1,75 @@
 .contact-container {
   display: flex;
+  height: 87.9vh;
 }
 
 .contact-form {
   flex: 1;
   padding: 20px;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(2,9,137,1) 99%);
+  color: white;
   font-family: 'Raleway', sans-serif;
   overflow-y: auto;
-  border-left: 10px solid var(--primary-color);
-  border-right: 10px solid var(--primary-color);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: inline-block;
+  text-align: center;
 }
 
-.google-map {
-  flex: 1;
-  /* Define styles for your Google Map container here */
-  /* e.g., height, background, etc. */
+.form-control{
+  margin: 1vh;
 }
 
-/* Rest of your CSS for contact form can remain the same */
-/* ... */
+.map-wrap {
+  background: rgba(8, 253, 216, 0.1);
+  float: right;
+  flex: 2;
+}
+
+.leaflet-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.info-map {
+  position: absolute;
+  background: #000;
+  top: 100px;
+  right: 40%;
+  z-index: 999999;
+  width: 267px;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 17px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 1s 1.5s;
+  animation-fill-mode: forwards;
+
+  span {
+    font-size: 16px;
+
+    span {
+      color: #ffd700;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .map-wrap {
+    float: none;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .info-map {
+    display: none;
+  }
+}

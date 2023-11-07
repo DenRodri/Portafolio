@@ -4,31 +4,37 @@ export const ProjectList = [
     {
         name: "Social Media Website",
         image: Project1,
-        Skills: ""
+        skills: "asd",
+        link: "https://github.com/machadop1407/react-personal-portfolio-website/blob/master/src/styles/ProjectDisplay.css"
     },
     {
         name: "Social Media Website",
         image: Project1,
-        Skills: ""
+        skills: "",
+        link: ""
     },
     {
         name: "Social Media Website",
         image: Project1,
-        Skills: ""
+        skills: "",
+        link: ""
     },
     {
         name: "Social Media Website",
         image: Project1,
-        Skills: ""
+        skills: "",
+        link: ""
     },
     {
         name: "Social Media Website",
         image: Project1,
-        Skills: ""
+        skills: "",
+        link: ""
     },
     {
         name: "Social Media Website",
         image: Project1,
-        Skills: ""
+        skills: "",
+        link: ""
     },
 ]

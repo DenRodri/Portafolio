@@ -13,6 +13,14 @@
     faReact,
   } from '@fortawesome/free-brands-svg-icons'
   import './cube.scss'
+  import {
+    VerticalTimeline,
+    VerticalTimelineElement,
+  } from "react-vertical-timeline-component";
+  import "react-vertical-timeline-component/style.min.css";
+import SchoolIcon from "@material-ui/icons/School";
+
+
 
 
   export function AboutMe() {
@@ -27,8 +35,8 @@
 
     return (
       <div>
-          <div className="about-page">
-          <div className="intro">
+        <div className="about-page">
+        <div className="intro">
             
 
         <div className="text">
@@ -69,6 +77,69 @@
             
           </div>
       </div>
+          
+      </div>
+      <div className="experience">
+      <VerticalTimeline lineColor="#3e497a">
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2010 - 2014"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Colegio Cardenal Sancha
+          </h3>
+          <p> Inicia mi interes en la programacion</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2014 - 2018"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Nova Mentis
+          </h3>
+
+          <h4 className="vertical-timeline-element-subtitle">
+            
+          </h4>
+
+          <p> Hago mis primeros cursos en programacion, React Native, Python, etc.</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2018 - 2023"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            ITESA
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            
+          </h4>
+          <p>Empiezo mi tecnico en programacion</p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2023 - Presente"
+          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Ultimo año de bachillerato
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            
+          </h4>
+          <p>
+            En el momento empezando una pasantia
+          </p>
+        </VerticalTimelineElement>
+      </VerticalTimeline>
       </div>
       </div>
     )

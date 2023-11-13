@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from "react-router-dom";
 import { ProjectList } from "../Components/ProjectList";
 import "./ProjectDisplay.scss"
-//import GitHubIcon from "@material-ui/icons/GitHub"
+import GitHubIcon from "@material-ui/icons/GitHub"
 
 export default function ProjectDisplay() {
     const { id } = useParams();
@@ -10,11 +10,11 @@ export default function ProjectDisplay() {
   return (
     <div className="project">
         <h1> {project.name} </h1>
-        <img alt="projectimage" src={project.image} />
+        <img alt="projectimage" style={{ height: '50vh', width: '50vw'}} src={project.image} />
         <p>
           <b>Habilidades: </b> {project.skills}
         </p>
-        {/* <a href={project.link}><GitHubIcon/></a> */}
+        <a href={project.link}><GitHubIcon/></a>
     </div>
   )
 }

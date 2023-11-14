@@ -88,7 +88,7 @@ export function Contacts() {
               </address>
               <p>{contactConfig.description}</p>
 
-              <form className="contact__form w-100" ref={form} onSubmit={sendEmail}>
+              <form className="contact-form2 w-100" ref={form} onSubmit={sendEmail}>
                     <input
                       className="form-control"
                       id="name"

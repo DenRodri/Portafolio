@@ -14,7 +14,7 @@ export default function ProjectDisplay() {
         <p>
           <b>Habilidades: </b> {project.skills}
         </p>
-        <a href={project.link}><GitHubIcon/></a>
+        <a href={project.link} target='blank'><GitHubIcon/></a>
     </div>
   )
 }

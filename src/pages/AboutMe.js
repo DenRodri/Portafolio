@@ -128,16 +128,11 @@ import SchoolIcon from "@material-ui/icons/School";
           date="2023 - Presente"
           iconStyle={{ background: "#e9d35b", color: "#fff" }}
           icon={<SchoolIcon />}
+          
         >
           <h3 className="vertical-timeline-element-title">
             Ultimo año de bachillerato
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            
-          </h4>
-          <p>
-            En el momento empezando una pasantia
-          </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
       </div>

@@ -20,7 +20,9 @@ $primary-color: #ffd700;
 html {
   font-size: 100%;
 }
-
+.App{
+  height: 87.75vh;
+}
 body {
   margin: 0;
   padding: 0;
@@ -30,10 +32,11 @@ body {
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
+  height: 100%;
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #0e0355;
   display: inline-block;
 
   justify-content: space-between;

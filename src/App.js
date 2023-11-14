@@ -11,7 +11,7 @@ import ProjectDisplay from "./pages/ProjectDisplay.js";
 function App() {
   return (
     <div className="App">
-      <nav className="navbar sticky-top">
+      <nav className="navbar navbar-expand-lg sticky-top navbar-scroll">
         <div className="logo">
           <Link to="/"><img classname="sub-logo" src={Logo} alt="Denzels"/></Link>
 

@@ -38,8 +38,7 @@ body {
 .navbar {
   background-color: rgb(31, 14, 146);
   display: inline-block;
-
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 20px; 
   z-index: 1;
@@ -47,17 +46,15 @@ body {
 
 .logo {
   margin: 0;
-  position: relative; 
-  transition: transform 0.2s; 
+  position: relative;  
 }
 
 .logo a {
   text-decoration: none;
-  height: 10vh;
   color: #fff;
   font-weight: bold;
   display: flex;
-  margin-left: 5vw;
+  text-align: center;
 
 }
 .logo:hover {
@@ -73,7 +70,8 @@ body {
   margin: 0;
   display: flex;
   align-items: center;
-  margin-right: 5vw;
+  text-align: center;
+  margin-right: 3vw;
 }
 
 .nav-links li {
@@ -98,6 +96,3 @@ body {
   box-sizing: border-box;
 }
 
-.sub-logo{
-  transform: scale(0.5s);
-}
